@@ -1,70 +1,71 @@
 <?php
 session_start();
 require ('header.php');
-if ($_SESSION['aviso']){
-    echo $_SESSION['aviso'];
-}
-?>
-<!---->
-<!--<form action="recebedor.php" method="post">-->
-<!--    <label >-->
-<!--        Nome:-->
-<!--        <br>-->
-<!--        <input type="text" name="nome">-->
-<!--    </label><br>-->
-<!--    <label >-->
-<!--        Nome:-->
-<!--        <br>-->
-<!--        <input type="email" name="email">-->
-<!--    </label><br>-->
-<!--    <label >-->
-<!--        Idade:-->
-<!--        <br>-->
-<!--        <input type="text" name="idade">-->
-<!--    </label>-->
-<!--    <br>-->
-<!--    <input type="submit" value="Enviar">-->
-<!--</form>-->
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
 
-<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
-<script src="js.js"></script>
-<body>
-<div class="container">
-    <div class="row">
-        <div class="col-md-5 mx-auto">
-            <div id="first">
-                <div class="myform form ">
-                    <div class="logo mb-3">
-                        <div class="col-md-12 text-center">
-                            <h1>Login</h1>
-                        </div>
-                    </div>
-                    <form action="recebedor.php" method="post" name="login">
-                        <div class="form-group">
-                            <label >Nome:</label>
-                            <input type="text" name="nome"  class="form-control" id="nome" >
-                        </div>
-                        <div class="form-group">
-                            <label >Email:</label>
-                            <input type="email" name="email" id="email"  class="form-control"  >
-                        </div>
-                        <div class="form-group">
-                            <label >Idade:</label>
-                            <input type="number" name="idade" id="email"  class="form-control"  >
-                        </div>
+?>
+<a href="apagar.php">Apagar Cookie </a>
+
+<form action="recebedor.php" method="post">
+    <label >
+        Nome:
+        <br>
+        <input type="text" name="nome">
+    </label><br>
+    <label >
+        Nome:
+        <br>
+        <input type="email" name="email">
+    </label><br>
+    <label >
+        Idade:
+        <br>
+        <input type="text" name="idade">
+    </label>
+    <br>
+    <input type="submit" value="Enviar">
+</form>
+<!--<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">-->
+<!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>-->
+<!--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+<!------ Include the above in your HEAD tag ---------->
+<!---->
+<!--<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>-->
+<!--<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">-->
+<!--<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">-->
+<!--<link rel="stylesheet" href="style.css">-->
+<!--<script src="js.js"></script>-->
+<!--<body>-->
+<!--<div class="container">-->
+<!--    <div class="row">-->
+<!--        <div class="col-md-5 mx-auto">-->
+<!--            <div id="first">-->
+<!--                <div class="myform form ">-->
+<!--                    <div class="logo mb-3">-->
+<!--                        <div class="col-md-12 text-center">-->
+<!--                            <h1>Login</h1>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <form action="recebedor.php" method="post" name="login">-->
+<!--                        <div class="form-group">-->
+<!--                            <label >Nome:</label>-->
+<!--                            <input type="text" name="nome"  class="form-control" id="nome" --/*<?php //if ($_SESSION['aviso']){
+//                                echo $_SESSION['aviso'];
+//                            }  ?>
+<!--                        </div>-->
+<!--                        <div class="form-group">-->
+<!--                            <label >Email:</label>-->
+<!--                            <input type="email" name="email" id="email"  class="form-control"  >-->
+<!--                        </div>-->
+<!--                        <div class="form-group">-->
+<!--                            <label >Idade:</label>-->
+<!--                            <input type="number" name="idade" id="email"  class="form-control"  >-->
+<!--                        </div>-->
 <!--                        <div class="form-group">-->
 <!--                            <p class="text-center">exquecia a senha <a href="#">Terms Of Use</a></p>-->
 <!--                        </div>-->
-                        <div class="col-md-12 text-center ">
-                            <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Enviar</button>
-                        </div>
+<!--                        <div class="col-md-12 text-center ">-->
+<!--                            <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Enviar</button>-->
+<!--                        </div>-->
 <!--                        <div class="col-md-12 ">-->
 <!--                            <div class="login-or">-->
 <!--                                <hr class="hr-or">-->
@@ -81,11 +82,11 @@ if ($_SESSION['aviso']){
 <!--                        <div class="form-group">-->
 <!--                            <p class="text-center">Don't have account? <a href="#" id="signup">Sign up here</a></p>-->
 <!--                        </div>-->
-                    </form>
-
-                </div>
-            </div>
-            <div id="second">
+<!--                    </form>-->
+<!---->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div id="second">-->
 <!--                <div class="myform form ">-->
 <!--                    <div class="logo mb-3">-->
 <!--                        <div class="col-md-12 text-center">-->
