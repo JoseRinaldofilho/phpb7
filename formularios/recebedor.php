@@ -1,10 +1,14 @@
 <?php
 // melho forma
-$nome = filter_input(INPUT_POST,'nome');
-$idade = filter_input(INPUT_POST,'idade');
+$nome = filter_input(INPUT_POST,'nome',FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+$email = filter_input(INPUT_POST,'email',FILTER_VALIDATE_EMAIL);//  validaõa email
+$idade = filter_input(INPUT_POST,'idade', FILTER_VALIDATE_INT);
 
-if ($nome){
+
+
+if ($nome && $idade && $email){
     echo "Nome: ".$nome."<hr>";
+    echo "Email: ".$email."<hr>";
     echo "IDade: ".$idade;
 }else{
 //    echo "Nao enviou".$nome;

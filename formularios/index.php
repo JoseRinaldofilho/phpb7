@@ -9,6 +9,11 @@ require ('header.php');
         <input type="text" name="nome">
     </label><br>
     <label >
+        Nome:
+        <br>
+        <input type="email" name="email">
+    </label><br>
+    <label >
         Idade:
         <br>
         <input type="text" name="idade">
